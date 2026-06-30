@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LoginAppApi/LoginAppApi.csproj" />
+  <Project Path="LoginAppMaui/LoginAppMaui.csproj" Id="d83abb10-af4e-4cc2-8b46-b3c1b53ce6dd" />
+</Solution>

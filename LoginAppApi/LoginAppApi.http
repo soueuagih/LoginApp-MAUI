@@ -1,0 +1,36 @@
+@LoginAppApi_HostAddress = https://localhost:7232
+
+GET {{LoginAppApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{LoginAppApi_HostAddress}}/api/user
+Content-Type: application/json
+
+{
+  "name": "User",
+  "email": "user@email.com",
+  "password": "1234"
+}
+
+###
+
+GET {{LoginAppApi_HostAddress}}/api/user
+Accept: application/json
+###
+
+
+@email=string
+@password=string
+GET {{LoginAppApi_HostAddress}}/api/user/login/gisouza@email.com/1234
+Accept: application/json
+###
+
+GET {{LoginAppApi_HostAddress}}/api/user
+
+###
+
+GET {{LoginAppApi_HostAddress}}/api/user/login/adm@email.com/1234
+
+###
